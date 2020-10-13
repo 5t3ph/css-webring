@@ -1,7 +1,7 @@
 const webringUrl =
   "https://raw.githubusercontent.com/5t3ph/css-webring/main/webring.json";
 
-class CssWebring extends HTMLElement {
+export class CssWebring extends HTMLElement {
   connectedCallback() {
     this.attachShadow({ mode: "open" });
 
@@ -99,4 +99,4 @@ text-align: var(--csswr-text-align, center);
   }
 }
 
-customElements.define("css-webring", CssWebring);
+window.customElements.define("css-webring", CssWebring);
